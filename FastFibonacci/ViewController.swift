@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     
     @IBAction func iterativeFunction(sender: AnyObject) {
         var x:Int = (xTextField.text as NSString).integerValue;
-        let fx = Recursive()
+        let fx = Iterative()
         
         let profiler = TimeProfiler()
         let elapsed = profiler.elapsed() {
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
     }
     @IBAction func cacheFunction(sender: AnyObject) {
         var x:Int = (xTextField.text as NSString).integerValue;
-        let fx = Recursive()
+        let fx = Cache()
         
         let profiler = TimeProfiler()
         let elapsed = profiler.elapsed() {

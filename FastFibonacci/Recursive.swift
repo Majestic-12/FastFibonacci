@@ -23,7 +23,7 @@ class Recursive {
 //            NSLog("fx_1(\(x - 1)):\(fx_1)")
 //            NSLog("fx_2(\(x - 2)):\(fx_2)")
         }
-        NSLog("result(\(x)):\(result)")
+//        NSLog("result(\(x)):\(result)")
         return result
     }
 }

@@ -16,10 +16,14 @@ class Recursive {
             result = x
         }
         else {
-            var fx_1 = fibonacci (x - 1)
-            var fx_2 = fibonacci (x - 2)
+            let fx_1 = fibonacci (x - 1)
+            let fx_2 = fibonacci (x - 2)
             result = fx_1 + fx_2
+            
+//            NSLog("fx_1(\(x - 1)):\(fx_1)")
+//            NSLog("fx_2(\(x - 2)):\(fx_2)")
         }
+        NSLog("result(\(x)):\(result)")
         return result
     }
 }

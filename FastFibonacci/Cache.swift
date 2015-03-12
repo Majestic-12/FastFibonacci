@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 majestic-12. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class Cache {
     var cache:[Int:Int] = [Int:Int]()

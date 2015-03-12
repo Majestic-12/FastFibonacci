@@ -10,6 +10,7 @@
 		8666D6201AB15A4000F3D80C /* Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666D61F1AB15A4000F3D80C /* Recursive.swift */; };
 		8666D6221AB15BEB00F3D80C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666D6211AB15BEB00F3D80C /* Cache.swift */; };
 		8666D6241AB15E5200F3D80C /* Iterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666D6231AB15E5200F3D80C /* Iterative.swift */; };
+		86B646FD1AB18C9800A5D93A /* TimeProfiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B646FC1AB18C9800A5D93A /* TimeProfiler.swift */; };
 		86BFA2231AB1564800956330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFA2221AB1564800956330 /* AppDelegate.swift */; };
 		86BFA2251AB1564800956330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFA2241AB1564800956330 /* ViewController.swift */; };
 		86BFA2281AB1564800956330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BFA2261AB1564800956330 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		8666D61F1AB15A4000F3D80C /* Recursive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursive.swift; sourceTree = "<group>"; };
 		8666D6211AB15BEB00F3D80C /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		8666D6231AB15E5200F3D80C /* Iterative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iterative.swift; sourceTree = "<group>"; };
+		86B646FC1AB18C9800A5D93A /* TimeProfiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeProfiler.swift; sourceTree = "<group>"; };
 		86BFA21D1AB1564800956330 /* FastFibonacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastFibonacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BFA2211AB1564800956330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86BFA2221AB1564800956330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				8666D61F1AB15A4000F3D80C /* Recursive.swift */,
 				8666D6231AB15E5200F3D80C /* Iterative.swift */,
 				8666D6211AB15BEB00F3D80C /* Cache.swift */,
+				86B646FC1AB18C9800A5D93A /* TimeProfiler.swift */,
 				86BFA2261AB1564800956330 /* Main.storyboard */,
 				86BFA2291AB1564800956330 /* Images.xcassets */,
 				86BFA22B1AB1564800956330 /* LaunchScreen.xib */,
@@ -226,6 +229,7 @@
 				8666D6221AB15BEB00F3D80C /* Cache.swift in Sources */,
 				8666D6241AB15E5200F3D80C /* Iterative.swift in Sources */,
 				86BFA2231AB1564800956330 /* AppDelegate.swift in Sources */,
+				86B646FD1AB18C9800A5D93A /* TimeProfiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

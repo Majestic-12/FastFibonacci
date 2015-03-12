@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FastFibonacci
 //
-//  Created by engineering on 3/11/15.
+//  Created by dpark11@icloud.com on 3/11/15.
 //  Copyright (c) 2015 majestic16. All rights reserved.
 //
 

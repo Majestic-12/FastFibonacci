@@ -9,14 +9,14 @@
 import Foundation
 
 class Iterative {
-    var fx_i:Int = 0
-    var fx_j:Int = 0
-    var fx_k:Int = 1
+    var fx_i:Double = 0
+    var fx_j:Double = 0
+    var fx_k:Double = 1
    
-    func fibonacci(x:Int)->Int {
-        var result:Int = 0
+    func fibonacci(x:UInt)->Double {
+        var result:Double = 0
         if (x < 2) {
-            result = x
+            result = Double(x)
         }
         else {
             for index in 2...x {
@@ -31,7 +31,7 @@ class Iterative {
             result = fx_k
         }
         
-        NSLog("result(\(x)):\(result)")
+//        NSLog("result(\(x)):\(result)")
         return result
     }
 }

@@ -25,7 +25,7 @@ class FastFibonacci:Iterative{
         }
     }
     
-    func fastfibonacci(x:Int)->Int {
+    func fastfibonacci(x:UInt)->Double {
         var memoized = memoize(super.fibonacci)
         let sigma = memoized(x)
         return sigma

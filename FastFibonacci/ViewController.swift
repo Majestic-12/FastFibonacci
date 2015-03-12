@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     
 
-    // MAPK @IBAction
+    // MAPK: @IBAction
     @IBAction func recursiveFunction(sender: AnyObject) {
         var x:Int = (xTextField.text as NSString).integerValue;
         let fx = Recursive()
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func iterativeFunction(sender: AnyObject) {
-        var x:Int = (xTextField.text as NSString).integerValue;
+        var x:UInt = UInt((xTextField.text as NSString).integerValue);
         let fx = Iterative()
         
         let profiler = TimeProfiler()
@@ -57,26 +57,28 @@ class ViewController: UIViewController {
         elapsedTextField.text = "\(elapsed)"
     }
     @IBAction func cacheFunction(sender: AnyObject) {
-        var x:Int = (xTextField.text as NSString).integerValue;
+        var x:UInt = UInt((xTextField.text as NSString).integerValue);
         let fx = Cache()
         
         let profiler = TimeProfiler()
         let elapsed = profiler.elapsed() {
             let sigma = fx.fibonacci(x);
-            NSLog("cache fibonacci(\(x)):\(sigma)")
-            self.fibonacciTextField.text = "\(sigma)"
+            let sigmaString = NSString(format: "%.1f", sigma)
+            NSLog("cache fibonacci(\(x)):\(sigmaString)")
+            self.fibonacciTextField.text = "\(sigmaString)"
         }
         elapsedTextField.text = "\(elapsed)"
     }
     @IBAction func fastFunction(sender: AnyObject) {
-        var x:Int = (xTextField.text as NSString).integerValue;
+        var x:UInt = UInt((xTextField.text as NSString).integerValue);
         let fx = FastFibonacci()
         
         let profiler = TimeProfiler()
         let elapsed = profiler.elapsed() {
             let sigma = fx.fastfibonacci(x);
-            NSLog("fast fibonacci(\(x)):\(sigma)")
-            self.fibonacciTextField.text = "\(sigma)"
+            let sigmaString = NSString(format: "%.1f", sigma)
+            NSLog("fast fibonacci(\(x)):\(sigmaString)")
+            self.fibonacciTextField.text = "\(sigmaString)"
         }
         elapsedTextField.text = "\(elapsed)"
     }

@@ -19,8 +19,8 @@ class TimeProfiler{
         let startDate = NSDate()
         closure()
         let timeIntervalSinceNow: NSTimeInterval = startDate.timeIntervalSinceNow
-        let elapsedInt:Int = Int(timeIntervalSinceNow * -1)
-        NSLog("elapsed:\(timeIntervalSinceNow)")
-        return "\(elapsedInt)"
+        let elapsedString = NSString(format: "%.4f", timeIntervalSinceNow * -1)
+        NSLog("elapsed:\(elapsedString)")
+        return "\(elapsedString)"
     }
 }

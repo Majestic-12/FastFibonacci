@@ -9,29 +9,29 @@
 import Foundation
 
 class Cache {
-    var cache:[Int:Int] = [Int:Int]()
+    var cache:[UInt:Double] = [UInt:Double]()
     
-    func fibonacci(x:Int)->Int {
-        var result:Int = 0
+    func fibonacci(x:UInt)->Double {
+        var result:Double = 0
         if (x < 2) {
-            result = x
+            result = Double(x)
         }
         else {
-            var fx_1 = cache[x - 1]
-            var fx_2 = cache[x - 2]
+            var fx_1:Double? = cache[x - 1]
+            var fx_2:Double? = cache[x - 2]
             
             if (fx_1 == nil) {
                 fx_1 = fibonacci(x - 1)
-                cache[x - 1] = fx_1
+                cache[x - 1] = fx_1!
             }
             
             if (fx_2 == nil) {
                 fx_2 = fibonacci(x - 2)
-                cache[x - 2] = fx_2
+                cache[x - 2] = fx_2!
             }
             result = fx_1! + fx_2!
         }
-        NSLog("result(\(x)):\(result)")
+//        NSLog("result(\(x)):\(result)")
         return result
     }
 }

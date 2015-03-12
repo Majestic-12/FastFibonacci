@@ -3,7 +3,7 @@
 //  FastFibonacci
 //
 //  Created by dpark11@icloud.com on 3/11/15.
-//  Copyright (c) 2015 majestic16. All rights reserved.
+//  Copyright (c) 2015 majestic-12. All rights reserved.
 //
 
 import UIKit
@@ -22,8 +22,25 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
+    // MAPK @IBAction
+    @IBAction func recursiveFunction(sender: AnyObject) {
+        var x:UInt = 5;
+        let fx = Iterative()
+        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
+    }
+    
+    @IBAction func iterativeFunction(sender: AnyObject) {
+        var x:UInt = 5;
+        let fx = Iterative()
+        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
+    }
+    @IBAction func cacheFunction(sender: AnyObject) {
+        var x:UInt = 5;
+        let fx = Iterative()
+        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
+    }
 }
 

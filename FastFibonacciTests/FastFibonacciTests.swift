@@ -3,7 +3,7 @@
 //  FastFibonacciTests
 //
 //  Created by dpark11@icloud.com on 3/11/15.
-//  Copyright (c) 2015 majestic16. All rights reserved.
+//  Copyright (c) 2015 majestic-12. All rights reserved.
 //
 
 import UIKit

@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var xTextField: UITextField!
+    @IBOutlet weak var fibonacciTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,22 +27,6 @@ class ViewController: UIViewController {
 
     }
 
-    // MAPK @IBAction
-    @IBAction func recursiveFunction(sender: AnyObject) {
-        var x:UInt = 5;
-        let fx = Iterative()
-        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
-    }
-    
-    @IBAction func iterativeFunction(sender: AnyObject) {
-        var x:UInt = 5;
-        let fx = Iterative()
-        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
-    }
-    @IBAction func cacheFunction(sender: AnyObject) {
-        var x:UInt = 5;
-        let fx = Iterative()
-        NSLog("fibonacci(\(x)):\(fx.fibonacci(x))")
-    }
+
 }
 

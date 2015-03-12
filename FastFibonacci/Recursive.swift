@@ -10,8 +10,8 @@ import Foundation
 
 class Recursive {
    
-    func fibonacci(x:UInt)->UInt {
-        var result:UInt = 0
+    func fibonacci(x:Int)->Int {
+        var result:Int = 0
         if (x < 2) {
             result = x
         }

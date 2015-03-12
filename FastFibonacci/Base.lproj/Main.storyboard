@@ -92,6 +92,10 @@
                             <constraint firstItem="iTT-rK-FNu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lCT-WW-R5w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fibonacciTextField" destination="j9m-FY-DCv" id="xLO-Mz-SVD"/>
+                        <outlet property="xTextField" destination="iTT-rK-FNu" id="FeJ-ji-W1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

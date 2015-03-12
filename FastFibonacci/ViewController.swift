@@ -63,6 +63,18 @@ class ViewController: UIViewController {
         let profiler = TimeProfiler()
         let elapsed = profiler.elapsed() {
             let sigma = fx.fibonacci(x);
+            NSLog("cache fibonacci(\(x)):\(sigma)")
+            self.fibonacciTextField.text = "\(sigma)"
+        }
+        elapsedTextField.text = "\(elapsed)"
+    }
+    @IBAction func fastFunction(sender: AnyObject) {
+        var x:Int = (xTextField.text as NSString).integerValue;
+        let fx = FastFibonacci()
+        
+        let profiler = TimeProfiler()
+        let elapsed = profiler.elapsed() {
+            let sigma = fx.fastfibonacci(x);
             NSLog("fast fibonacci(\(x)):\(sigma)")
             self.fibonacciTextField.text = "\(sigma)"
         }

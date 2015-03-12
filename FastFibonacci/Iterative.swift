@@ -24,9 +24,9 @@ class Iterative {
                 fx_j = fx_k
                 fx_k = fx_i + fx_j
                 
-                NSLog("fx_i(\(index)):\(fx_i)")
-                NSLog("fx_j(\(index)):\(fx_j)")
-                NSLog("fx_k(\(index)):\(fx_k)")
+//                NSLog("fx_i(\(index)):\(fx_i)")
+//                NSLog("fx_j(\(index)):\(fx_j)")
+//                NSLog("fx_k(\(index)):\(fx_k)")
             }
             result = fx_k
         }

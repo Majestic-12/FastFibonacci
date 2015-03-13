@@ -12,3 +12,9 @@ Complexity : O(k)
 Fast Fibonacci algorithm uses an iterative f(n) with
 generics in Swift
 
+e.g. Original fn(150) takes 2 hours.
+
+The Fast Fibonacci of fn(150) takes 0.4 second.
+
+ 
+

@@ -7,7 +7,7 @@ Complexity of Recursive definition: O(2^n)
 
 With Fast Fibonacci algorithm:
 
-Complexity : O(k)
+Complexity : O(n)
 
 Fast Fibonacci algorithm uses an iterative f(n) with
 generics in Swift
